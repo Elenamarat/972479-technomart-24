@@ -55,27 +55,27 @@
         <div class="promo-item">
           <h3>Материалы</h3>
           <a class="promo-button" href="#">На любой вкус</a>
-          <!-- <img src="img/icon-1.jpg" width="44" height="65" alt="Материалы"> -->
+          <!-- <img src="img/promo-image-1.jpg" width="44" height="65" alt="Материалы"> -->
         </div>
         <div class="promo-item">
           <h3>Инструмент</h3>
           <a class="promo-button" href="#">На все случаи</a>
-          <!-- <img src="img/icon-2.jpg" width="75" height="61" alt="Инструмент"> -->
+          <!-- <img src="img/promo-image-2.jpg" width="75" height="61" alt="Инструмент"> -->
         </div>
         <div class="promo-item">
           <h3>Техника</h3>
           <a class="promo-button" href="#">Для стройки</a>
-          <!-- <img src="img/icon-3.jpg" width="78" height="62" alt="Техника"> -->
+          <!-- <img src="img/promo-image-3.jpg" width="78" height="62" alt="Техника"> -->
         </div>
         <div class="promo-item">
           <h3>Скидки 50%</h3>
           <a class="promo-button" href="#">На 350 товаров</a>
-          <!-- <img src="img/icon-4.jpg" width="59" height="72" alt="Скидки 50%"> -->
+          <!-- <img src="img/promo-image-4.jpg" width="59" height="72" alt="Скидки 50%"> -->
         </div>
         <div class="promo-item">
           <h3>Доставка</h3>
           <a class="promo-button" href="#">Бесплатно</a>
-          <!-- <img src="img/icon-5.jpg" width="78" height="63" alt="Доставка"> -->
+          <!-- <img src="img/promo-image-5.jpg" width="78" height="63" alt="Доставка"> -->
         </div>
         <div class="promo-slider">
           <div class="slide-1">
@@ -229,7 +229,7 @@
         <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:
         </p>
-        <a class="contacts-map" href="#">
+        <a class="contacts-map" href="img/big-map.png">
           <img src="img/map.png" width="300" height="158" alt="map">
         </a>
         <button class="modal-write-us">Заблудились? Напишите нам</button>
@@ -284,7 +284,16 @@
     </footer>
 
     <section class="modal modal-write-us">
-      <!-- Здесь будет форма -->
+      <form action="#" method="post">
+        <h3>Ваше имя:</h3>
+          <input type="text" name="name" value="Имя Фамилия">
+        <h3>Ваш e-mail:</h3>
+          <input type="email" name="mail" value="email@example.com">
+        <h3>Текст письма:</h3>
+          <textarea name="letter" rows="6" cols="60">В свободной форме</textarea>
+          <br>
+        <input type="submit" value="Отправить">
+      </form>
       <span class="modal-close">x</span>
     </section>
 

@@ -62,6 +62,45 @@
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
+        <form action="#" method="post" oninput="priceoutput.value=price.value">
+          <h3>Цена:</h3>
+            <input type="range" name="price" min="0" max="30000" step="1">
+            <br>
+            <output name="priceoutput"></output>
+          <hr>
+          <h3>Производители:</h3>
+          <label>
+            <input type="checkbox" name="bosch" checked>bosch
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="bosch">интерскол
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="bosch" checked>makita
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="bosch">dewalt
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="bosch">hitachi
+          </label>
+          <br>
+          <hr>
+          <h3>Питание:</h3>
+          <label>
+            <input type="radio" name="power" value="akkum" checked>Аккумуляторные
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="power" value="net">Сетевые
+          </label>
+          <br>
+          <input type="submit" value="Показать">
+        </form>
         <!-- Здесь будет форма -->
       </section>
 
