@@ -1,0 +1,40 @@
+.promo-item {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
+  padding: 26px 28px 22px 23px;
+  background-color: hsl(0, 0%, 0%);
+  margin: 10px;
+}
+
+.promo-item:nth-child(2) {
+  background: #ffbf47 url("../img/promo-image-1.svg") no-repeat 213px 31px;
+}
+
+.promo-item:nth-child(3) {
+  background: #3bbce3 url("../img/promo-image-2.svg") no-repeat 197px 33px;
+}
+
+.promo-item:nth-child(4) {
+  background: #dc91d8 url("../img/promo-image-3.svg") no-repeat 191px 31px;
+}
+
+.promo-item:nth-child(5) {
+  background: #8ed78f url("../img/promo-image-4.svg") no-repeat 196px 26px;
+}
+
+.promo-item:nth-child(6) {
+  background: #ffc047 url("../img/promo-image-5.svg") no-repeat 191px 32px;
+}
+
+.promo-button {
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+.promo-item h3 {
+  font-size: 24px;
+}

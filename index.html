@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+  	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <section class="top-menu">
+        <h2 class="visually-hidden">Верхнее меню</h2>
         <p class="logo">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип «Техномарт»">
         </p>
@@ -55,40 +57,48 @@
         <div class="promo-item">
           <h3>Материалы</h3>
           <a class="promo-button" href="#">На любой вкус</a>
-          <!-- <img src="img/promo-image-1.jpg" width="44" height="65" alt="Материалы"> -->
         </div>
         <div class="promo-item">
           <h3>Инструмент</h3>
           <a class="promo-button" href="#">На все случаи</a>
-          <!-- <img src="img/promo-image-2.jpg" width="75" height="61" alt="Инструмент"> -->
         </div>
         <div class="promo-item">
           <h3>Техника</h3>
           <a class="promo-button" href="#">Для стройки</a>
-          <!-- <img src="img/promo-image-3.jpg" width="78" height="62" alt="Техника"> -->
         </div>
         <div class="promo-item">
           <h3>Скидки 50%</h3>
           <a class="promo-button" href="#">На 350 товаров</a>
-          <!-- <img src="img/promo-image-4.jpg" width="59" height="72" alt="Скидки 50%"> -->
         </div>
         <div class="promo-item">
           <h3>Доставка</h3>
           <a class="promo-button" href="#">Бесплатно</a>
-          <!-- <img src="img/promo-image-5.jpg" width="78" height="63" alt="Доставка"> -->
         </div>
         <div class="promo-slider">
           <div class="slide-1">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
-            <!-- <img src="img/promo-slide-1.jpg" width="620" height="266" alt="Слайд 1"> -->
+            <figure class="promo-slider-content">
+                <a href="#">
+                  <img src="img/promo-slide-1.jpg" width="620" height="266" alt="Слайд 1">
+                 </a>
+            </figure>
+            <button class="promo-slider-back" type="button">Назад</button>
+            <button class="promo-slider-next" type="button">Вперед</button>
+            <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="slide-2">
             <h3>Дрели</h3>
             <p>Соседям на радость</p>
-            <!-- <img src="img/promo-slide-2.jpg" width="620" height="266" alt="Слайд 2"> -->
+            <figure class="promo-slider-content">
+                <a href="#">
+                  <img src="img/promo-slide-2.jpg" width="620" height="266" alt="Слайд 2">
+                 </a>
+            </figure>
+            <button class="promo-slider-back" type="button">Назад</button>
+            <button class="promo-slider-next" type="button">Вперед</button>
+            <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
           </div>
-          <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
         </div>
       </section>
 
@@ -101,7 +111,7 @@
             <img src="img/popular-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <p class="popular-product-price">
               <del>32500 Р.</del>
-              <span class="button-buy">25500 Р.</span>
+              <button class="button-buy">25500 Р.</button>
             </p>
           </li>
           <li class="popular-product">
@@ -109,7 +119,7 @@
             <img src="img/popular-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <p class="popular-product-price">
               <del>22500 Р.</del>
-              <span class="button-buy">15500 Р.</span>
+              <button class="button-buy">15500 Р.</button>
             </p>
           </li>
           <li class="popular-product">
@@ -117,14 +127,14 @@
             <img src="img/popular-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <p class="popular-product-price">
               <del>30500 Р.</del>
-              <span class="button-buy">25500 Р.</span>
+              <button class="button-buy">25500 Р.</button>
             </p>
           </li>
           <li class="popular-product">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <img src="img/popular-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <p class="popular-product-price">
-              <span class="button-buy">12500 Р.</span>
+              <button class="button-buy">12500 Р.</button>
             </p>
           </li>
         </ul>
@@ -238,6 +248,7 @@
 
     <footer class="main-footer">
       <section class="footer-content">
+        <h2 class="visually-hidden">Подвал сайта</h2>
         <p class="logo">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип «Техномарт»">
         </p>
@@ -261,6 +272,7 @@
       </section>
 
       <section class="bottom-menu">
+        <h2 class="visually-hidden">Нижнее меню</h2>
         <p class="footer-copyright">
           2010-2019 Компания "Техномарт"<br>
           Все права защищены
@@ -284,6 +296,7 @@
     </footer>
 
     <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма отзыва</h2>
       <form action="#" method="post">
         <h3>Ваше имя:</h3>
           <input type="text" name="name" value="Имя Фамилия">
@@ -294,13 +307,13 @@
           <br>
         <input type="submit" value="Отправить">
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close">Закрыть окно</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- <img src="img/big-map.png" width="1736" height="779" alt="Карта"> -->
-      <span class="modal-close">x</span>
+      <button class="modal-close">Закрыть окно</button>
     </section>
   </body>
 </html>
