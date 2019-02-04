@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url("fonts/Cuprum.woff") format("woff");
+}
+
 body {
-  font-size: 14px;
-  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  font-family: "Cuprum", sans-serif;
 }
 
 .visually-hidden {
