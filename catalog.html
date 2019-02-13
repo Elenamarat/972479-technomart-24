@@ -11,7 +11,8 @@
   <body>
 
     <header class="main-header">
-      <section class="top-menu">
+      <div class="top-menu-wrapper">
+      <section class="top-menu container">
         <h2 class="visually-hidden">Верхнее меню</h2>
         <p class="logo">
           <a href="index.html">
@@ -35,8 +36,9 @@
           <a href="#">Оформить заказ</a>
         </p>
       </section>
+      </div>
 
-      <section class="header-content">
+      <section class="header-content container">
         <h2>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h2>
         <p class="header-contacts">
           <span class="header-phone">+7 (812) 555-05-55</span><br>
@@ -49,7 +51,7 @@
         </ul>
       </section>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -70,6 +72,7 @@
         <li>Перфораторы</li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
+      <div class="catalog-columns">
       <section class="filters">
         <h2>фильтр:</h2>
         <form class="filter" action="#" method="post" oninput="priceoutput.value=price.value">
@@ -212,16 +215,18 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
+      </div>
+    </main>
 
-      <article class="annotation">
+      <div class="annotation-wrapper">
+      <article class="annotation container">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </article>
-    </main>
-
+      </div>
     <footer class="main-footer">
-      <section class="footer-content">
+      <section class="footer-content container">
         <h2 class="visually-hidden">Подвал сайта</h2>
         <p class="logo">
           <a href="index.html">
@@ -247,7 +252,8 @@
         </ul>
       </section>
 
-      <section class="bottom-menu">
+      <div class="bottom-menu-wrapper">
+      <section class="bottom-menu container">
         <h2 class="visually-hidden">Нижнее меню</h2>
         <p class="footer-copyright">
           2010-2019 Компания "Техномарт"<br>
@@ -269,12 +275,13 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </section>
+      </div>
     </footer>
 
     <section class="modal modal-cart">
       <img src="img/add-to-cart.svg" width="66" height="66" alt="Товар добавлен в корзину">
       <h2>Товар добавлен в корзину!</h2>
-      <p class="modal modal-buttons">
+      <p class="modal modal-cart-buttons">
         <a class="modal-button-order" href="#">Оформить заказ</a>
         <a class="modal-button-continue" href="#">Продолжить покупки</a>
       </p>
