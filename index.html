@@ -44,8 +44,8 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <ul class="authorization">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Регистрация</a></li>
+          <li><a class="authorization-enter" href="#">Войти</a></li>
+          <li><a class="authorization-registration" href="#">Регистрация</a></li>
         </ul>
       </section>
 
@@ -66,94 +66,120 @@
       <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo-item">
+          <div class="flag flag-new">новинка</div>
           <h3>Материалы</h3>
           <a class="promo-button" href="#">На любой вкус</a>
         </div>
         <div class="promo-item">
+          <div class="visually-hidden flag flag-new">новинка</div>
           <h3>Инструмент</h3>
           <a class="promo-button" href="#">На все случаи</a>
         </div>
         <div class="promo-item">
+          <div class="visually-hidden flag flag-new">новинка</div>
           <h3>Техника</h3>
           <a class="promo-button" href="#">Для стройки</a>
         </div>
         <div class="promo-item">
+          <div class="visually-hidden flag flag-new">новинка</div>
           <h3>Скидки 50%</h3>
           <a class="promo-button" href="#">На 350 товаров</a>
         </div>
         <div class="promo-item">
+          <div class="visually-hidden flag flag-new">новинка</div>
           <h3>Доставка</h3>
           <a class="promo-button" href="#">Бесплатно</a>
         </div>
         <div class="promo-slider">
-          <div class="slide-1">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <figure class="promo-slider-content">
-                <a href="#">
-                  <img src="img/promo-slide-1.jpg" width="620" height="266" alt="Слайд 1">
-                </a>
-            </figure>
-            <button class="promo-slider-back" type="button">Назад</button>
-            <button class="promo-slider-next" type="button">Вперед</button>
-            <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
+          <div class="promo-slider-controls">
+            <i></i>
+            <i class="active-promo-slider"></i>
           </div>
-          <div class="slide-2">
-            <h3>Дрели</h3>
-            <p>Соседям на радость</p>
-            <figure class="promo-slider-content">
-                <a href="#">
-                  <img src="img/promo-slide-2.jpg" width="620" height="266" alt="Слайд 2">
-                </a>
-            </figure>
-            <button class="promo-slider-back" type="button">Назад</button>
-            <button class="promo-slider-next" type="button">Вперед</button>
-            <a class="promo-slider-button" href="#">Открыть каталог</a>
+          <div class="promo-slider-scroll">
+            <i class="promo-slider-back"></i>
+            <i class="promo-slider-next"></i>
           </div>
+          <ul class="promo-slider-list">
+            <li class="promo-slider-item">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="promo-slider-item">
+              <h3>Дрели</h3>
+              <p>Соседям на радость</p>
+              <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="popular-products">
-          <h2 class="popular-top">Популярные товары</h2>
+        <div class="popular-top">
+          <h2 >Популярные товары</h2>
           <a class="popular-button" href="#">Все популярные товары</a>
+        </div>
         <ul class="popular-products-list">
           <li class="popular-product">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <div class="visually-hidden flag flag-new">новинка</div>
+            <p class="catalog-item-actions">
+              <a class="buy" href="#">Купить</a>
+              <a class="bookmark" href="#">В закладки</a>
+            </p>
             <img src="img/popular-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-            <p class="popular-product-price">
-              <del>32500 Р.</del><br>
-              <span class="button-buy">25500 Р.</span>
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <p class="catalog-item-price">
+              <del>32500 Р.</del>
+              <span class="button-buy" href="#">25500 Р.</span>
             </p>
           </li>
           <li class="popular-product">
+            <div class="visually-hidden flag flag-new">новинка</div>
+            <p class="catalog-item-actions">
+              <a class="buy" href="#">Купить</a>
+              <a class="bookmark" href="#">В закладки</a>
+            </p>
+            <img src="img/popular-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <img src="img/popular-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-            <p class="popular-product-price">
-              <del>22500 Р.</del><br>
-              <span class="button-buy">15500 Р.</span>
+            <p class="catalog-item-price">
+              <del>22500 Р.</del>
+              <span class="button-buy" href="#">15500 Р.</span>
             </p>
           </li>
           <li class="popular-product">
+            <div class="visually-hidden flag flag-new">новинка</div>
+            <p class="catalog-item-actions">
+              <a class="buy" href="#">Купить</a>
+              <a class="bookmark" href="#">В закладки</a>
+            </p>
+            <img src="img/popular-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="img/popular-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-            <p class="popular-product-price">
-              <del>30500 Р.</del><br>
-              <span class="button-buy">25500 Р.</span>
+            <p class="catalog-item-price">
+              <del>30500 Р.</del>
+              <span class="button-buy" href="#">25500 Р.</span>
             </p>
           </li>
           <li class="popular-product">
+            <div class="flag flag-new">новинка</div>
+            <p class="catalog-item-actions">
+              <a class="buy" href="#">Купить</a>
+              <a class="bookmark" href="#">В закладки</a>
+            </p>
+            <img src="img/popular-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            <img src="img/popular-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-            <p class="popular-product-price">
-              <span class="button-buy">12500 Р.</span>
+            <p class="catalog-item-price">
+              <del>32500 Р.</del>
+              <span class="button-buy" href="#">12500 Р.</span>
             </p>
           </li>
         </ul>
       </section>
 
       <section class="popular-manufacturers">
-        <h2 class="popular-top">Популярные производители</h2>
-        <a class="popular-button" href="#">Все производители</a>
+        <div class="popular-top">
+          <h2 >Популярные производители</h2>
+          <a class="popular-button" href="#">Все производители</a>
+        </div>
         <ul class="popular-manufacturers-list">
           <li class="popular-manufacturer">
             <a href="#">
@@ -291,13 +317,12 @@
           2010-2019 Компания "Техномарт"<br>
           Все права защищены
         </p>
-        <div class="footer-social">
-          <ul class="footer-social">
-            <li><a class="social-button vk" href="#"></a></li>
-            <li><a class="social-button fb" href="#">Фейсбук</a></li>
-            <li><a class="social-button insta" href="#">Инстаграм</a></li>
-          </ul>
-        </div>
+        <ul class="footer-social">
+          <li><a class="social-button vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button fb" href="#">Фейсбук</a></li>
+          <li><a class="social-button insta" href="#">Инстаграм</a></li>
+        </ul>
+
         <p class="footer-htmlacademy-mail">
           Обратная связь:
           <a href="#">mail@htmlacademy.ru</a>
@@ -307,27 +332,31 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </section>
-    </div>
+      </div>
     </footer>
 
     <section class="modal modal-write-us">
+      <div class="modal-write-us-top"></div>
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form action="#" method="post">
-        <h3>Ваше имя:</h3>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        <h3>Ваш e-mail:</h3>
-          <input type="email" name="mail" placeholder="email@example.com">
-        <h3>Текст письма:</h3>
+        <label>Ваше имя:
+          <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>Ваш e-mail:
+          <input class="user-email" type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label class="user-letter">Текст письма:
           <textarea name="letter" rows="6" cols="60" placeholder="В свободной форме"></textarea>
-          <br>
+        </label>
         <input type="submit" value="Отправить">
       </form>
       <button class="modal-close">Закрыть окно</button>
+      <div class="modal-write-us-bottom"></div>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!-- <img src="img/big-map.png" width="1736" height="779" alt="Карта"> -->
+      <img src="img/big-map.png" width="1736" height="779" alt="Карта">
       <button class="modal-close">Закрыть окно</button>
     </section>
 
