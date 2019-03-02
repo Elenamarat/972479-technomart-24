@@ -1242,6 +1242,15 @@ background-color: #ca2c37;
   opacity: 0.2;
 }
 
+.authorization .authorization-personal-cabinet::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
 .authorization .authorization-name:hover::before,
 .authorization .authorization-name:focus::before,
 .authorization .authorization-name:hover::after,
