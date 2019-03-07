@@ -1623,9 +1623,23 @@ background-color: #ca2c37;
   background-color: #f7f3ec;
 }
 
+.sort li:first-child {
+  padding-right: 90px;
+}
+
 .sort-item a {
   color: #000000;
   opacity: 0.3;
+}
+
+.sort-item-up,
+.sort-item-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: inherit;
+  font-size: 0;
 }
 
 .sort-item-up {
@@ -1634,6 +1648,16 @@ background-color: #ca2c37;
 
 .sort-item-down {
   background: url("../img/catalog-button-down.svg") no-repeat 50% 50%;
+  opacity: 0.3;
+}
+
+.sort-item-down:hover,
+.sort-item-down:focus {
+  opacity: 1;
+}
+
+.sort-item-down:active {
+  background: url("../img/catalog-button-down-red.svg") no-repeat 50% 50%;
 }
 
 .sort-item a:hover,
