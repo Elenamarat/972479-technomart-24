@@ -1629,6 +1629,7 @@ background-color: #ca2c37;
 
 .sort-item a {
   color: #000000;
+  border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
 }
 
@@ -1663,15 +1664,18 @@ background-color: #ca2c37;
 .sort-item a:hover,
 .sort-item a:focus {
   color: #000000;
+  border-bottom: 1px solid #ee3643;
   opacity: 1;
 }
 
 .sort-item a:active {
   color: #ee3643;
+  border: 0;
 }
 
 .sort-item-current a {
   color: #ee3643;
+  border: 0;
   opacity: 1;
 }
 
