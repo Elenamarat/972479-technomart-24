@@ -235,10 +235,10 @@ img {
 .header-phone {
   position: relative;
   display: inline-block;
-  box-sizing: border;
-  width: inherit;
+  width: 240px;
   margin: 0;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0;
+  padding-left: 22px;
   line-height: 21px;
   font-size: 21px;
   color: #ee3643;
@@ -1343,64 +1343,62 @@ background-color: #ca2c37;
 }
 
 .inner-authorization {
+  display: flex;
   justify-content: flex-start;
   width: 300px;
+  margin-left: -22px;
+  margin-bottom: -10px;
   font-family: "Cuprum", sans-serif;
 }
 
-.authorization .authorization-name {
+.inner-authorization .authorization-name {
+  display: flex;
+  align-items: center;
   position: relative;
-  width: 250px;
-  padding: 14px 25px;
+  width: 300px;
+  margin-bottom: 4px;
+  padding-left: 48px;
+  background-color: #ffffff;
 }
 
-.authorization .authorization-name::before {
+.inner-authorization .authorization-name::before {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 12px;
+  top: 12px;
+  left: 14px;
   width: 20px;
   height: 18px;
   background: url("../img/authorization-user.svg") no-repeat;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
-.authorization .authorization-name::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 10px;
+.inner-authorization .authorization-exit {
   width: 21px;
-  height: 17px;
+  margin-top: 6px;
+  margin-left: 35px;
+  height: 0;
+  font-size: 0;
   background: url("../img/authorization-exit.svg") no-repeat;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
-.authorization .authorization-personal-cabinet::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 5px;
-  border: solid 2px black;
-  border-radius: 50%;
-}
 
-.authorization .authorization-name:hover::before,
-.authorization .authorization-name:focus::before,
-.authorization .authorization-name:hover::after,
-.authorization .authorization-name:focus::after {
+.inner-authorization .authorization-name:hover::before,
+.inner-authorization .authorization-name:focus::before,
+.inner-authorization .authorization-exit:hover,
+.inner-authorization .authorization-exit:focus {
   opacity: 1;
 }
 
-.authorization .authorization-name:active::before,
-.authorization .authorization-name:active::after {
+.inner-authorization .authorization-name:active::before,
+.inner-authorization .authorization-exit:active {
   opacity: 0.2;
 }
 
-.authorization .authorization-order,
-.authorization .authorization-personal-cabinet {
+.inner-authorization .authorization-order,
+.inner-authorization .authorization-personal-cabinet {
   position: relative;
-  margin-top: -40px;
+  margin-top: -10px;
   padding-left: 18px;
   line-height: 18px;
   font-size: 16px;
@@ -1409,30 +1407,43 @@ background-color: #ca2c37;
   background: none;
 }
 
-.authorization .authorization-order:hover,
-.authorization .authorization-order:focus,
-.authorization .authorization-personal-cabinet:hover,
-.authorization .authorization-personal-cabinet:focus {
+.inner-authorization .authorization-personal-cabinet {
+  margin-left: 15px;
+}
+
+.inner-authorization .authorization-personal-cabinet::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 1px;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
+.inner-authorization .authorization-order:hover,
+.inner-authorization .authorization-order:focus,
+.inner-authorization .authorization-personal-cabinet:hover,
+.inner-authorization .authorization-personal-cabinet:focus {
   color: #f36c75;
 }
 
-.authorization .authorization-order:active,
-.authorization .authorization-personal-cabinet:active {
+.inner-authorization .authorization-order:active,
+.inner-authorization .authorization-personal-cabinet:active {
   color: #b7bfc8;
 }
 
 .breadcrumbs {
   display: flex;
   margin: 0;
-  margin-top: -35px;
-  margin-bottom: 25px;
+  margin-top: -39px;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 }
 
 .breadcrumbs a {
   position: relative;
-  padding-right: 45px;
+  padding-right: 40px;
   color: #000000;
 }
 
@@ -1440,13 +1451,14 @@ background-color: #ca2c37;
   content: "";
   position: absolute;
   top: 3px;
-  right: 20px;
+  right: 16px;
   width: 8px;
   height: 12px;
   background: url("../img/breadcrumbs.svg") no-repeat;
 }
 
 .page-title {
+  font-family: "Cuprum", sans-serif;
   padding: 30px;
   line-height: 30px;
   font-size: 30px;
@@ -1461,6 +1473,7 @@ background-color: #ca2c37;
 
 .filters {
   width: 220px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .filters h2 {
@@ -1475,9 +1488,9 @@ background-color: #ca2c37;
 }
 
 .filter fieldset {
-  padding-top: 10px;
-  margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-bottom: 20px;
   border: none;
 }
 
@@ -1542,7 +1555,7 @@ background-color: #ca2c37;
   text-align: center;
   color: #000000;
   line-height: 18px;
-  font-size: 13px;
+  font-size: 17px;
   height: 35px;
   width: 90px;
   padding: 2px 5px;
@@ -1560,8 +1573,8 @@ background-color: #ca2c37;
 }
 
 .filter legend {
-  margin: 0;
-  padding: 0;
+  margin-top: -10px;
+  margin-bottom: 15px;
   line-height: 30px;
   font-size: 17px;
   font-weight: 700;
@@ -1574,15 +1587,15 @@ background-color: #ca2c37;
   line-height: 20px;
 }
 
-.filter-ortion {
-  margin-bottom: 19px;
+.filter .filter-manufacturers {
+  margin-bottom: 10px;
 }
 
 .filter-option label {
   display: block;
   position: relative;
-  margin-bottom: 17px;
-  padding-left: 45px;
+  margin-bottom: 20px;
+  padding-left: 35px;
 }
 
 .filter-input-checkbox + label::before {
@@ -1665,6 +1678,7 @@ background-color: #ca2c37;
 .filter-button {
   width: 140px;
   min-height: 38px;
+  margin-top: 12px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -1765,7 +1779,7 @@ background-color: #ca2c37;
   box-sizing: border-box;
   width: 218px;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 22px;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
   text-align: center;
@@ -1790,7 +1804,8 @@ background-color: #ca2c37;
 }
 
 .catalog-item h3 {
-  margin: 0 40px;
+  width: 160px;
+  margin: 8px 30px;
   line-height: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -1808,6 +1823,8 @@ background-color: #ca2c37;
 }
 
 .catalog-item-price del {
+  padding-top: 5px;
+  margin-bottom: -5px;
   color: #999999;
 }
 
