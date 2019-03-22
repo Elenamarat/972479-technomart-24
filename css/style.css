@@ -1016,7 +1016,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
 }
 
 .info-contacts h2 {
@@ -1156,6 +1156,8 @@ img {
   min-height: 62px;
   margin: 0;
   padding: 0;
+  width: 340px;
+  font-size: 18.7px;
 }
 
 .footer-promo-items {
@@ -1214,7 +1216,9 @@ img {
 }
 
 .footer-copyright {
-  width: 230px;
+  width: 260px;
+  margin-right: 30px;
+
 }
 
 .footer-social {
