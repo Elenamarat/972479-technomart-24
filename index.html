@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-  	<link href="css/style.min.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -37,9 +37,9 @@
       </div>
 
       <section class="header-content container">
-        <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+        <h1>Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
         <p class="header-contacts">
-          <span class="header-phone">+7 (812) 555-05-55</span><br>
+          <span class="header-phone">+7 (812) 555-05-55</span>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <ul class="authorization">
@@ -95,12 +95,14 @@
         </div>
         <div class="promo-slider">
           <div class="promo-slider-controls">
-            <i></i>
-            <i class="active-promo-slider"></i>
+            <input class="visually-hidden" type="radio" id="promo-slider-1">
+            <label for="promo-slider-1"></label>
+            <input class="visually-hidden active-promo-slider" type="radio" id="promo-slider-2" checked>
+            <label for="promo-slider-2"></label>
           </div>
           <div class="promo-slider-scroll">
-            <i class="promo-slider-back"></i>
-            <i class="promo-slider-next"></i>
+            <a class="promo-slider-back" href="#">предыдущий слайд</a>
+            <a class="promo-slider-next" href="#">следующий слайд</a>
           </div>
           <ul class="promo-slider-list">
             <li class="promo-slider-item">
@@ -119,7 +121,7 @@
 
       <section class="popular-products">
         <div class="popular-top">
-          <h2 >Популярные товары</h2>
+          <h2 >Популярные товары:</h2>
           <a class="popular-button" href="#">Все популярные товары</a>
         </div>
         <ul class="popular-products-list">
@@ -180,7 +182,7 @@
 
       <section class="popular-manufacturers">
         <div class="popular-top">
-          <h2 >Популярные производители</h2>
+          <h2 >Популярные производители:</h2>
           <a class="popular-button" href="#">Все производители</a>
         </div>
         <ul class="popular-manufacturers-list">
@@ -270,13 +272,12 @@
 
     <div class="info-contacts container">
       <section class="info">
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товара для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтреах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки Росии!<br>
-            Техномарт работает со многими транспортными компаниями:</p>
+        <h2>Компания &laquo;Техномарт&raquo;</h2>
+        <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки Росии! Техномарт работает со многими транспортными компаниями:</p>
         <ul class="transport-companys">
           <li class="transport-company">Деловые линии</li>
-          <li class="transport-company">Авторейдинг</li>
+          <li class="transport-company">Автотрейдинг</li>
           <li class="transport-company">ЖелДорЭкспедиция</li>
         </ul>
         <a class="popular-button info-button" href="#">Подробнее о компании</a>
@@ -284,8 +285,7 @@
 
       <section class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами,<br>
-            заехав в наш офис:
+        <p>Вы можете забрать товар сами, заехав в наш офис:
         </p>
         <a class="contacts-map" href="img/big-map.png">
           <img src="img/map.png" width="300" height="158" alt="map">
@@ -323,8 +323,7 @@
       <section class="bottom-menu container">
         <h2 class="visually-hidden">Нижнее меню</h2>
         <p class="footer-copyright">
-          &copy; 2010-2019 Компания "Техномарт"<br>
-          Все права защищены
+          &copy; 2010-2019 Компания &laquo;Техномарт&raquo; Все права защищены
         </p>
         <ul class="footer-social">
           <li><a class="social-button vk" href="#">Вконтакте</a></li>
