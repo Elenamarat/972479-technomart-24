@@ -961,11 +961,11 @@ img {
 }
 
 #service2:checked ~ .service-slider-list {
-  background: url("../img/guarantee.png") no-repeat right 25px;
+  background: url("../img/guarantee.png") no-repeat 320px 0;
 }
 
 #service3:checked ~ .service-slider-list {
-  background: url("../img/loan.png") no-repeat right 25px;
+  background: url("../img/loan.png") no-repeat 245px 0;
 }
 
 #service1:checked ~ .service-slider-controls label[for="service1"],
@@ -984,17 +984,43 @@ img {
   color: #32425c;
 }
 
-.service .service-slide-p {
+.service .service-slider1-p {
   margin: 0;
   margin-top: 27px;
   padding: 0;
   width: 280px;
 }
 
-.service .service-slide-p1 {
+.service .service-slider1-p1 {
   margin: 0;
   padding: 0;
   width: 200px;
+}
+
+.service .service-slider2-p {
+  margin: 0;
+  margin-top: 27px;
+  padding: 0;
+  width: 380px;
+}
+
+.service .service-slider2-p1 {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}
+
+.service .service-slider3-p {
+  margin: 0;
+  margin-top: 27px;
+  padding: 0;
+  width: 280px;
+}
+
+.service .service-slider3-p1 {
+  margin: 0;
+  padding: 0;
+  width: 300px;
 }
 
 .service p,
@@ -1006,6 +1032,7 @@ img {
 }
 
 .service-loan-button {
+  margin-top: 27px;
   width: 195px;
 }
 
@@ -1402,11 +1429,16 @@ img {
   bottom: 170px;
   left: 50%;
   width: 940px;
-  min-height: 450px;
+  height: 446px;
   margin-left: -470px;
-  background-color: #ffffff;
+  background: #ffffff url("../img/big-map.png") no-repeat 66% 77%;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.50);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.50);
+}
+
+.modal-close-map {
+  top: 9px;
+  right: 5px;
 }
 
 .modal-cart {
@@ -1651,7 +1683,7 @@ background-color: #ca2c37;
   font-family: "Cuprum", "Tahoma", sans-serif;
   padding: 30px;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 28.5px;
   color: #32425c;
   background-color: #f2f6f8;
 }
@@ -1675,7 +1707,7 @@ background-color: #ca2c37;
           box-sizing: border-box;
   min-height: 37px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 10px 18px;
   line-height: 18px;
   font-size: 13px;
@@ -1692,6 +1724,7 @@ background-color: #ca2c37;
 .range-filter {
   min-height: 130px;
   width: 220px;
+  margin-bottom: 2px;
 }
 
 .range-controls {
@@ -1744,9 +1777,11 @@ background-color: #ca2c37;
 
 .price-controls label {
   display: inline-block;
+  padding-left: 1px;
 }
 
 .price-controls {
+  margin-top: -3px;
   font-size: 0;
 }
 
@@ -1784,8 +1819,10 @@ background-color: #ca2c37;
 .filter ul {
   padding: 0;
   margin: 0;
+  margin-top: -2px;
   list-style: none;
   line-height: 20px;
+  font-size: 14px;
 }
 
 .filter .filter-manufacturers {
@@ -2030,7 +2067,8 @@ background-color: #ca2c37;
 
 .catalog-item h3 {
   width: 160px;
-  margin: 8px 30px;
+  margin: 10px 30px;
+  margin-bottom: 7px;
   line-height: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -2214,8 +2252,9 @@ background-color: #ca2c37;
 }
 
 .annotation h2 {
+  margin-bottom: 26px;
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -2223,7 +2262,7 @@ background-color: #ca2c37;
 .annotation p {
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 13.1px;
   line-height: 24px;
   text-transform: none;
 }
