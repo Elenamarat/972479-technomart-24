@@ -76,7 +76,7 @@
       <div class="catalog-columns">
       <section class="filters">
         <h2>фильтр:</h2>
-        <form class="filter" action="#" method="post" oninput="priceoutput.value=price.value">
+        <form class="filter" action="#" method="post">
           <fieldset class="filter-price-range">
             <legend>Цена:</legend>
             <div class="range-filter">
@@ -346,21 +346,7 @@
       <button class="modal-close">Закрыть окно</button>
     </section>
 
-    <script>
-      var buyLink = document.querySelector(".buy");
-      var buyPopup = document.querySelector(".modal-cart");
-      var closeModal = document.querySelector(".modal-close");
-
-      buyLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        buyPopup.classList.add("modal-show");
-      });
-
-      closeModal.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        buyPopup.classList.remove("modal-show");
-      });
-    </script>
+    <script src="js/jss.min.js"></script>
 
   </body>
 </html>

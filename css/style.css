@@ -231,12 +231,15 @@ img {
 
 .header-content h1,
 .header-content h2 {
+  box-sizing: border-box;
   display: inline-block;
+  vertical-align: center;
   margin: 0;
   padding: 0 50px;
-  width: 210px;
+  padding-right: 55px;
+  width: 305px;
   line-height: 23px;
-  font-size: 15.2px;
+  font-size: 15.3px;
   font-style: italic;
   color: #ee3643;
 }
@@ -1087,7 +1090,7 @@ img {
 .transport-company::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: -35px;
   height: 2px;
   width: 25px;
@@ -1095,7 +1098,7 @@ img {
 }
 
 .info .info-button {
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 .contacts {
@@ -1111,7 +1114,7 @@ img {
 
 .contacts-button {
   width: 300px;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 /* footer */
@@ -1707,7 +1710,7 @@ background-color: #ca2c37;
           box-sizing: border-box;
   min-height: 37px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 13px;
   padding: 10px 18px;
   line-height: 18px;
   font-size: 13px;
@@ -1777,6 +1780,7 @@ background-color: #ca2c37;
 
 .price-controls label {
   display: inline-block;
+  vertical-align: center;
   padding-left: 1px;
 }
 
@@ -1805,7 +1809,7 @@ background-color: #ca2c37;
 }
 
 .filter fieldset:not(:last-of-type) {
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .filter legend {
@@ -1820,13 +1824,15 @@ background-color: #ca2c37;
   padding: 0;
   margin: 0;
   margin-top: -2px;
+  margin-bottom: -18px;
   list-style: none;
   line-height: 20px;
   font-size: 14px;
 }
 
 .filter .filter-manufacturers {
-  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .filter-option label {
@@ -1840,7 +1846,7 @@ background-color: #ca2c37;
   content: "";
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 23px;
   height: 23px;
   background: url("../img/checkbox-off.svg") no-repeat;
@@ -1861,8 +1867,8 @@ background-color: #ca2c37;
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0px;
+  top: -1px;
+  left: -1px;
   width: 25px;
   height: 25px;
   background: url("../img/radio-off.svg") no-repeat;
@@ -1916,7 +1922,7 @@ background-color: #ca2c37;
 .filter-button {
   width: 140px;
   min-height: 38px;
-  margin-top: 12px;
+  margin-top: 28px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
